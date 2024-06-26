@@ -1,0 +1,55 @@
+.searchContainer {
+    position: relative;
+    margin-left: 5%;
+    
+  }
+
+  .searchIcon {
+    position: absolute;
+    left: 100px;
+    top: 30%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 25px;
+    color: #07401B;
+  }
+  .adjustmentIcon{
+    position: absolute;
+    left: 500px;
+    top: 30%;
+    transform: translateY(-50%);
+    color: #edcfcf;
+    font-size: 25px;
+    color: #07401B;
+  }
+  .signIcon{
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #07401B;
+  }
+  .search{
+    padding:20px 200px; 
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: rgb(223, 246, 233);
+    color: #434141;
+    border: none;
+  }
+
+  .logo{
+    color: #07401B;
+  }
+.navbarContent{
+    display: flex;
+    gap: 10%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.signIn{
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 10%;
+    align-items: center;
+}
