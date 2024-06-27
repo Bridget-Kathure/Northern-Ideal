@@ -10,6 +10,7 @@ const NothernIdeal =()=>{
     <div>
       <NavBar/>
       <Landingpage/>
+      <getTheProducts/>
 
     </div>
   )
