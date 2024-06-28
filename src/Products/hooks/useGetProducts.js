@@ -1,20 +1,21 @@
 
+import { useState, useEffect } from 'react';
 
-import { getProducts } from "../util";
-import { useEffect, useState } from "react";
-
-
-export const getTheProducts = () => {
+export const useGetProducts = () => {
   const [products, setProducts] = useState([]);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const result = await getProducts();
-        console.log({ result });
-        setProducts(result);
+        const response = await fetch('https://fakestoreapi.com/products');
+        if (!response.ok) {
+          throw new Error(`HTTP error ${response.status}`);
+        }
+        const data = await response.json();
+        setProducts(data);
         setLoading(false);
       } catch (error) {
         setError(`Error: ${error.message}`);
@@ -23,5 +24,6 @@ export const getTheProducts = () => {
     };
     fetchProducts();
   }, []);
+
   return { products, error, loading };
 };

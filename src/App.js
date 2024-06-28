@@ -1,6 +1,7 @@
 
 import Landingpage from "./Landing";
 import { NavBar } from "./Navbar";
+import {Products} from "./Products"
 
 
 
@@ -10,7 +11,7 @@ const NothernIdeal =()=>{
     <div>
       <NavBar/>
       <Landingpage/>
-      <getTheProducts/>
+      <Products/>
 
     </div>
   )

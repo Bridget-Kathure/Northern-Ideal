@@ -1,12 +1,11 @@
 
 import "./index.css";
-import ProductCard from "../Atoms";
-import { getTheProducts } from "./hooks/getTheProducts";
-import { getTheProducts } from "./hooks/getTheProducts";
+import ProductCard from "../Atoms/ProductCard";
+import { useGetProducts } from "./hooks/useGetProducts";
 
 
-const Products = () =>{
-    const { products, error, loading } = getTheProducts();
+export const Products = () =>{
+    const { products, error, loading } = useGetProducts();
   console.log({ products });
   return (
     <div className="product-images">
@@ -26,4 +25,3 @@ const Products = () =>{
     </div>
   );
 };
-export default Products;

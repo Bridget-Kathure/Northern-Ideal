@@ -1,6 +1,7 @@
 
 .product-images{
-
+    width: 20%;
+    height: 40%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
  
@@ -8,7 +9,4 @@
 .product-images {
     flex: 0 1 calc(30% - 20px);
     max-width: calc(30% - 20px);
-}
-.product-images img{
-    width: 20%;
 }
